@@ -1,9 +1,9 @@
 const getActivity = async () =>{
     let participantes = document.querySelector('input[name="numero"]:checked').value;
     if(participantes == 0){
-            url = "http://www.boredapi.com/api/activity/";
+            url = "https://www.boredapi.com/api/activity/";
         } else {
-            url = "http://www.boredapi.com/api/activity?participants=" + participantes;
+            url = "https://www.boredapi.com/api/activity?participants=" + participantes;
         }
     let request = await fetch(url);
     if(request.ok){
